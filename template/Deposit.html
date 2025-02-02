@@ -1,0 +1,195 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime-Ledger - Deposite</title>
+    <link rel="stylesheet" href="{% static "Deposit.css" %}">
+    <link rel="stylesheet" href="{% static "2ndresponse.css" %}">
+</head>
+<body>
+    <div class="body">
+        <section class="side-section">
+            <nav class="side-nav">
+                <img src="{% static "30.jpg" %}" alt="">
+                <p>Prime-Ledger</p>
+            </nav>
+            <div class="sc2">
+                <div class="acc">
+                    <div class="sub">
+                      <p>Acount Balance </p><span>Wallet</span>
+                    </div>
+                    <div class="sub2">
+                      👝 Main Wallet  <span>$632843</span>
+                    </div>
+                    <div class="sub3">
+                      🏛 Profit Wallet  <span>$39604.78</span>
+                    </div>
+                    <div class="dpi">
+                      <p><a href="#" class="span1">Deposit </a></p> <p><a href="#"  class="span">Invest Now</a></p>
+                    </div>
+              </div>
+              <div class="pages">
+                  <a href="{% url 'dashboard' %}" class="a">DASHBOARD</a>
+                  <a href="" class="a">INVESTMENT PLANS</a>
+                  <a href="" class="a">INVESTMENT LOGS</a>
+                  <a href="" class="a">ALL TRANSACTIONS</a>
+                  <span><a href="" class="a">ADD MONEY</a></span>
+                  <a href="" class="a">ADD MONEY LOG</a>
+                  <a href="" class="a">WALLET EXCHANGE</a>
+                  <a href="" class="a">WITHDRAW</a>
+                  <a href="" class="a">WITHDRAW LOG</a>
+                  <a href="" class="a">RANKING BADGE</a>
+                  <a href="" class="a">REFERRAL</a>
+                  <a href="" class="a">SETTINGS</a>
+                  <a href="" class="a">SUPPORT TICKET</a>
+                  <a href="" class="a">NOTIFICATION</a>
+                  <div class="logout"><a href="">➡LOGOUT</a></div>
+              </div>
+            </div>
+        </section>
+        <section class="main-section">
+            <nav class="main-nav">
+                <form action="">
+                    <button><a href="{% url 'dashboard' %}" class="a">←</a></button>
+                </form>
+                <div>
+                    <p class="name">
+                        <img src="30.jpg" alt="">
+                        Prime-Ledger
+                    </p>
+                    <a href="#" class="bright">&#128262;</a>
+                    <a href="#" class="bell">&#128276;</a>
+                    <form action="profile.html">
+                        <button>🙍🏻‍♂</button>
+                    </form>
+                </div>
+            </nav>
+           <div class="bdy">
+            <div class="container">
+                <div class="am">
+                    Add Money  <a href="">Deposit History</a>
+                </div>
+                    <div class="box-container">
+                        <div class="box">
+                            <div class="circ"></div>
+                            <div class="num">01</div>
+                            <p>Deposit Amount <br>
+                                <span class="min">Enter your deposit details</span>
+                            </p>
+                        </div>
+                        <div class="box2">
+                            <div class="num2">02</div>
+                            <p>Success <br>
+                                <span class="min">Success your deposit</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <div class="gateway">
+                            <label for="gate">Payment Method:</label> <br>
+                            <select name="info-select" id="info-select">
+                                <option value="">--Select Gateway--</option>
+                                <option value="option1"><a href="project.html">Bitcoin</a></option>
+                                <option value="option2">USDT TRC20</option>
+                            </select>
+                            <div class="info-container" id="info-container">
+                                <p id="info-text2"></p>
+                                <p id="info-text"></p>
+                                <p id="info-text3"></p>
+                                <img id="info-image">
+                                <input type="file" id="image-upload" accept="image/*">
+                            </div>
+                        </div>
+                        <div class="inp">
+                            <div>
+                                <label for="amt">Enter Amount:</label> <br>
+                            <input type="number" id="amt">
+                            </div>
+                            <div class="usd">USD</div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p>Review Details:</p>
+                        <table>
+                            <tr>
+                                <th>Amount</th>
+                            </tr>
+                            <tr>
+                                <th>Charge</th>
+                            </tr>
+                            <tr>
+                                <th>Payment Method</th>
+                            </tr>
+                            <tr>
+                                <th>Total</th>
+                            </tr>
+                        </table>
+                        <a href="" class="pay">PROCEED TO PAYMENT  »</a>
+                    </div>
+                    
+            </div>
+            <div class="sp"></div>
+           </div>
+        </section>
+    </div>
+    <script>
+        const selectElement = document.getElementById("info-select");
+        const InfoContainer =
+        document.getElementById("info-container");
+        const infotext = document.getElementById("info-text");
+        const imageUpload = document.getElementById("image-upload");
+        const infoImage = document.getElementById("info-image");
+        const infotext2 = document.getElementById("info-text2");
+        const infotext3 = document.getElementById("info-text3");
+
+        selectElement.addEventListener("change", () => {
+            const selectedValue = selectElement.value;
+            let infoMessage = "";
+            let infomessage2 = "";
+            let infomessage3 = "";
+
+            switch (selectedValue) {
+                case "option1":
+                    infomessage2 = "Please make deposit to the wallet below";
+                    infoMessage = "THz7t2cR5vLUmHivaDNLjpJbc9UmsYu7E3";
+                    infomessage3 = "upload a screenshot of your payment";
+                    imageUpload.style.display = "block";
+                    break;
+                case "option2":
+                    infomessage2 = "Please make deposit to the wallet below";
+                    infoMessage = "17BnASWtYDQMmrXvBXmrMojjU6uDNsJTMZ";
+                    infomessage3 = "upload a screenshot of your payment";
+                    imageUpload.style.display = "block";
+                    break;
+                default:
+                    infomessage2 = "";
+                    infoMessage = "";
+                    infomessage3 = "";
+                    imageUpload.style.display = "none";
+                    break;
+            }
+
+            infotext.innerText = infoMessage;
+            infotext2.innerText = infomessage2;
+            infotext3.innerText = infomessage3;
+            InfoContainer.style.display = infoMessage !== "" ? "block" :
+            "none";
+            InfoContainer.style.display = infoMessage2 !== "" ? "block" :
+            "none";
+            InfoContainer.style.display = infoMessage3 !== "" ? "block" :
+            "none";
+        });
+        imageUpload.addEventListener("change", () => {
+            const selectedFile = imageUpload.files[0];
+            const reader = new FileReader();
+
+            reader.addEventListener("load",() => {
+                infoImage.src = reader.result;
+            });
+            reader.readAsDataURL(selectedFile);
+        });
+    </script>
+</body>
+</html>

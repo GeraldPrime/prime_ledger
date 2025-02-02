@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.logo-image {
+    width: 50px;
+    margin-bottom: 1rem; 
+    border-radius: 50px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+label {
+    font-size: 0.85rem;
+    color: #333;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.forgot-password {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    background: rgb(27, 27, 49);
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #2980b9;
+}
+
+.signup-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.signup-link a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for responsiveness */
+
+/* For screens less than 768px (tablets and small desktops) */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;  /* Allow the container to use more space on smaller screens */
+        padding: 1.5rem; /* Reduce padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+
+    .form-group input {
+        font-size: 0.85rem; /* Slightly smaller font size for inputs */
+    }
+
+    .login-btn {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* For screens less than 480px (small devices like mobile phones) */
+@media (max-width: 480px) {
+    .login-container {
+        width: 100%;  /* Make the login container take full width on small screens */
+        padding: 1rem; /* Reduce padding even more for mobile */
+    }
+
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .form-group input {
+        font-size: 0.8rem; /* Further reduce font size for mobile inputs */
+    }
+
+    .options {
+        flex-direction: column; /* Stack options vertically on smaller screens */
+        align-items: flex-start;
+    }
+
+    .forgot-password {
+        margin-top: 0.5rem;
+    }
+
+    .login-btn {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .signup-link p {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,242 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime-Ledger-dashboard</title>
+    <link rel="stylesheet" href="{% static "dashboard.css" %}">
+    <link rel="stylesheet" href="{% static "responsiveness.css" %}">
+</head>
+<body>
+    <div class="body">
+        <section class="side-section">
+            <nav class="side-nav">
+                <img src="{% static "30.jpg" %}" alt="">
+                <p>Prime-Ledger - Dashboard</p>
+            </nav>
+            <div class="sc2">
+                <div class="acc">
+                    <div class="sub">
+                      <p>Acount Balance </p><span>Wallet</span>
+                    </div>
+                    <div class="sub2">
+                      👝 Main Wallet  <span>$632843</span>
+                    </div>
+                    <div class="sub3">
+                      🏛 Profit Wallet  <span>$39604.78</span>
+                    </div>
+                    <div class="dpi">
+                      <p><a href="{% url 'Deposit' %}" class="span1">Deposit </a></p> <p><a href="#"  class="span">Invest Now</a></p>
+                    </div>
+              </div>
+              <div class="pages">
+                  <span><a href="" class="a">DASHBOARD</a></span>
+                  <a href="" class="a">INVESTMENT PLANS</a>
+                  <a href="" class="a">INVESTMENT LOGS</a>
+                  <a href="" class="a">ALL TRANSACTIONS</a>
+                  <a href="{% url 'Deposit' %}" class="a">ADD MONEY</a>
+                  <a href="" class="a">ADD MONEY LOG</a>
+                  <a href="" class="a">WALLET EXCHANGE</a>
+                  <a href="" class="a">WITHDRAW</a>
+                  <a href="" class="a">WITHDRAW LOG</a>
+                  <a href="" class="a">RANKING BADGE</a>
+                  <a href="" class="a">REFERRAL</a>
+                  <a href="" class="a">SETTINGS</a>
+                  <a href="" class="a">SUPPORT TICKET</a>
+                  <a href="" class="a">NOTIFICATION</a>
+                  <div class="logout"><a href="{% url 'logout_view' %}">➡LOGOUT</a></div>
+              </div>
+            </div>
+        </section>
+        <section class="main-section">
+            <nav class="main-nav">
+                <form action="">
+                    <button>←</button>
+                </form>
+                <div>
+                    <p class="name">
+                        <img src="30.jpg" alt="">
+                        Prime-Ledger
+                    </p>
+                    <a href="#" class="bright">&#128262;</a>
+                    <a href="#" class="bell">&#128276;</a>
+                    <form action="profile.html">
+                        <button class="profile"><a href="{% url 'profile' %}">🙍🏻</a></button>
+                    </form>
+                </div>
+            </nav>
+            <div class="scroll">
+                <div class="container">
+                    <div class="box">
+                        <img src="{% static "box_014021.png" %}" alt="">
+                        <p>
+                           <div class="count" id="count"> 99</div>
+                            <div class="txt">All Transactions</div>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="{% static "copy_014026.png" %}" alt="">
+                        <p>
+                           <div class="count" id="count"><span>$</span>360390</div>
+                            <div class="txt">Total Deposit</div>
+                        </p>
+                    </div>
+                    <div class="box3">
+                        <img src="{% static "checkbox_014026.png" %}" alt="">
+                        <p>
+                           <div class="count" id="count"><span>$</span>343433</div>
+                            <div class="txt">Total 
+                                <p>Investment</p>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="{% static "card_014026.png" %}" alt="">
+                        <p>
+                           <div class="count" id="count"><span>$</span>346347.7</div>
+                            <div class="txt">Total Profit</div>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="{% static "arrow_021105.png" %}" alt="">
+                        <p>
+                           <div class="count" id="count"><span>$</span>0</div>
+                            <div class="txt">Total Transfer </div>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="{% static "yen_014157.png" %}" alt="">
+                        <p>
+                           <div class="count" id="count"><span>$</span>34290</div>
+                            <div class="txt">Total Withdraw</div>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="{% static "gift_013527.png" %}" alt="">
+                        <p>
+                           <div class="count" id="count"><span>$</span>0</div>
+                            <div class="txt">Referal Bonus </div>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="{% static "cal_014025.png" %}" alt="">
+                        <p>
+                           <div class="count" id="count"><span>$</span>0</div>
+                            <div class="txt">Deposit Bonus </div>
+                        </p>
+                    </div>
+                    <div class="box3">
+                        <img src="{% static "we_014322.png" %}" alt="">
+                        <p>
+                           <div class="count" id="count"><span>$</span>0</div>
+                            <div class="txt">Investment 
+                                <p>Bonus</p>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="{% static "box_014021.png" %}" alt="">
+                        <p>
+                           <div class="count" id="count">0</div>
+                            <div class="txt">Total Referral</div>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="{% static "web_014243.png" %}" alt="">
+                        <p>
+                           <div class="count" id="count">1</div>
+                            <div class="txt">Rank Achieved</div>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="{% static "question_013531.png" %}" alt="">
+                        <p>
+                           <div class="count" id="count">0</div>
+                            <div class="txt">Total Ticket</div>
+                        </p>
+                    </div>
+                </div>
+                <div class="recent">
+                    <div class="note">Recent Transactions</div>
+                    <div class="table">
+                    <p>DESCRIPTION</p>
+                    <p>TRAVSACTION ID</p>
+                    <p>TYPE</p>
+                    <p>AMOUNT</p>
+                    <p>FEE</p>
+                    <p>STATUS</p>
+                    <p>GATEWAY</p>
+                    </div>
+                    <div class="input">
+                        <p>Gold plan Interest <br>
+                        <span class="date">Jan 18 2025 10:38</span></p>
+                        <p>TRXQTFNLCG5JW</p>
+                        <p><span class="red">Interest</span></p>
+                        <p class="dols">+1715 USD</p>
+                        <p>0 USD</p>
+                        <p><span class="green">Success</span></p>
+                        <p>System</p>
+                    </div>
+                    <div class="input">
+                        <p>Gold Capital Back</p>
+                        <p>TRXTCUAIH8ZND	</p>
+                        <p><span class="red">Refund</span></p>
+                        <p class="dols">+7000 USD</p>
+                        <p>0 USD</p>
+                        <p><span class="green">Success</span></p>
+                        <p>System</p>
+                    </div>
+                    <div class="input">
+                        <p>Profit to Main Wallet Exchanged</p>
+                        <p>TRXWBLUHBPF7X</p>
+                        <p><span class="red">Exchange</span></p>
+                        <p class="dols">+300000  USD</p>
+                        <p>0 USD</p>
+                        <p><span class="green">Success</span></p>
+                        <p>System</p>
+                    </div>
+                    <div class="input">
+                        <p>Deposit With Bitcoin</p>
+                        <p>TRXD4N5A56CZQ</p>
+                        <p><span class="red">Manual deposit</span></p>
+                        <p class="dols">+300  USD</p>
+                        <p>0 USD</p>
+                        <p><span class="green">Success</span></p>
+                        <p>System</p>
+                    </div>
+                    <div class="input">
+                        <p>Deposit With Bitcoin</p>
+                        <p>TRXMRLDHQIJVO</p>
+                        <p><span class="red">Manual deposit</span></p>
+                        <p class="dols">+300  USD</p>
+                        <p>0 USD</p>
+                        <p><span class="red">canceled</span></p>
+                        <p>System</p>
+                    </div>
+                </div>
+                
+            </section>
+            </div>
+    </div>
+    <script>
+        function animateCounter(elementId, start, end, duration) {
+            let range = end - start;
+            let stepTime = Math.abs(Math.floor(duration / range));
+            let current = start;
+            let increment = end > start ? 1 : -1;
+            let obj = document.getElementById(elementId);
+
+            let timer = setInterval(function(){
+                current += increment;
+                obj.innerHTML = "$" + current.toLocalString();
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+
+        animateCounter("count", )
+    </script>
+</body>
+</html>

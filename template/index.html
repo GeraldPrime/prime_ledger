@@ -1,0 +1,358 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="{% static "style.css" %}">
+        <section id="header">
+            <div class="logo">
+              <img src="{% static "30.jpg" %}" alt="" class="img1">
+              <div class="under">
+               <h2 class="bb">PRIME LEDGER </h2> 
+               <P class="p1">INVESTMENT LIMITED</P>
+              </div>
+            </div>
+            <div>
+                <ul id="navbar">
+                    <li class="li"><a class="active" href="#banner">Home</a></li>
+                    <li class="li"><a class="about1">About Us</a></li>
+                    <li class="li"><a href="">Contact Us</a></li>
+                    <li class="li"><a href="">Login</a></li>
+                    <li class="li"><a href="">Register</a></li>
+                </ul>
+            </div>
+            
+            <div id="mobile">
+                <p id="close"><i  class="fa fa-times"></i></p>
+                <p id="bar"><i   class="fas fa-outdent i" ></i></p>
+            </div>
+          </section> 
+
+</head>
+
+<body>
+  <section class="section1">
+
+    <div class="hero">
+      <div class="text">
+        <h1>Trading</h1>
+        <div class="linehero"></div>
+        <h1>Investment</h1>
+        <div class="linehero"></div>
+      </div>
+      <h1 class="real">Real Estate management</h1>
+      <p class="des">Turn into a professional trader via our one-stop services platform features,high excution speed 
+        and low fees.</p>
+
+        <div class="heroBtn">
+          <button class="button1"><a href="{% url 'login' %}">Login</a></button>
+          <button class="button1"> <a href="{% url 'register' %}">RESGISTER</a></button>
+        </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="text-content">
+        <h1>About Us</h1>
+        <p>
+            "When we were creating the company back in 2018, we defined three main principles of Growthcoin-Financial: trust, quality and reliability. This became the basis for everything we have done since. We simply decided to put the interests of traders above all else, and this helped us earn trust and loyalty of thousands of clients, many of whom have been with us since the foundation, and it motivates us to work even harder."
+        </p>
+        <p>
+            Our award-winning partnership program allows us to provide high-quality services to clients all around the world in their native languages even in countries with no Growthcoin-Financial offices.
+        </p>
+        <button>Learn More</button>
+    </div>
+    <div class="image-content">
+        <img src="{% static '14.jpg' %}" alt="About Us Image">
+    </div>
+</div>
+
+<style>
+
+</style>
+
+  <section class="section3">
+    <div class="about">
+      <div class="divec">
+        <h3 class="sec3">WE TRADE FOR YOU</h3>
+        <h2 class="sec4">Benefits Of Trading With Us</h2>
+      </div>
+      <div class="divson"></div>
+      <p class="divson1">
+        We have been trading forex for companies, banks, and other top <br> personalities around the world. <br>
+        Our trading outcome and strategy have proven to be the best with <br> great value. So we have come together and agreed to build a <br>
+        platform where the masses can <br> earn from our trading strategy. <br>
+        All you need to do is create an account with <b>Prime-Ledger</b> and deposit.
+      </p>
+      <button class="button5"><a href="{% url 'register' %}">Register Now</a></button>
+    </div>
+  
+    <div class="cards">
+      <div class="card">
+        <img src="{% static '17.jpg' %}" alt="Padlock" class="icon">
+        <h4 class="card-title">Fund Security</h4>
+        <p class="card-text">Your fund is 100% secured. We are experienced in trading.</p>
+      </div>
+  
+      <div class="card">
+        <img src="{% static '23.jpg' %}" alt="Money" class="icon">
+        <h4 class="card-title">Daily Profit</h4>
+        <p class="card-text">You make profit on a daily basis. We are the best traders.</p>
+      </div>
+  
+      <div class="card">
+        <img src="{% static '22.jpg' %}" alt="Dollar" class="icon">
+        <h4 class="card-title">Fast Withdrawal</h4>
+        <p class="card-text">You can withdraw your funds at any time.</p>
+      </div>
+  
+      <div class="card">
+        <img src="{% static '17.jpg' %}" alt="Support" class="icon">
+        <h4 class="card-title">24/7 Support</h4>
+        <p class="card-text">We are always online to attend to your queries.</p>
+      </div>
+    </div>
+    
+    <div class="register-btn">
+      <button class="button4"><a href="{% url 'register' %}">Register Now</a></button>
+    </div>
+  </section>
+
+  <section class="section4" >
+
+    <h3 class="bitcoin">WHAT IS <br> <h2 class="btc">BITCOIN?</h2></h3>
+
+    <div class="div4"></div>
+
+    <div class="videoDown">
+
+      <iframe class="video"
+
+              src="https://www.youtube.com/embed/s4g1XFU8Gto" 
+
+              title="YouTube video player" frameborder="0" 
+
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              
+              allowfullscreen>
+
+      </iframe>
+    </div>
+  </section>
+  <section class="section6">
+    <div class="fastpayment-container">
+      <img src="{% static '32.jpg' %}" alt="Fast Payment" class="fastpayment">
+      <h2 class="fastpayment-h2">FAST PAYMENT</h2>
+      <p class="fastpayment-p">
+        <span class="fast">ENJOY A SMOOTH AND FAST PAYMENT</span>
+      </p>
+      <p class="fastpayment-p">
+        With <span class="fast1">PRIME-LEDGER,</span> you enjoy a very smooth and fast <br> 
+        payment without any hidden fees attached.
+      </p>
+      <p class="fastpayment-p">We take pride in satisfying the needs of our clients.</p>
+      <form action="index1.html">
+        <button class="button6">Get Started Now</button>
+      </form>
+    </div>
+    <div class="div-eth">
+      <img src="{% static '1.jpg' %}" alt="Ethereum" class="eth">
+    </div>
+  </section>
+  
+  
+  <section class="section7">
+    <!-- Section Heading -->
+    <h2 class="section7-h2">Our Trading Packages</h2>
+    <div class="line"></div>
+    <p class="section7-p">Grow your money with our stable and profitable packages that suit you best!</p>
+  
+    <!-- Trading Plans -->
+    <div class="divflex">
+      
+      <!-- Basic Plan -->
+      <div class="plan-container">
+        <p class="plan-title">BASIC PLAN</p>
+        <p class="plan-price"><span class="sp">$30</span> Minimum</p>
+        <div class="div-yellow"></div>
+        <ul class="plan-details">
+          <li>Instant Withdrawal</li>
+          <li>24/7 Support</li>
+          <li>Duration: 24hrs</li>
+          <li>Profit: 10%</li>
+        </ul>
+        <p class="plan-price"><span class="sp">$499</span> Maximum</p>
+        <div class="div-yellow2"></div>
+        <form action="index1.html">
+          <button class="button7">Get Started Now</button>
+        </form>
+      </div>
+  
+      <!-- Silver Plan -->
+      <div class="plan-container">
+        <p class="plan-title">SILVER PLAN</p>
+        <p class="plan-price"><span class="sp">$500</span> Minimum</p>
+        <div class="div-yellow"></div>
+        <ul class="plan-details">
+          <li>Instant Withdrawal</li>
+          <li>24/7 Support</li>
+          <li>Duration: 3 Days</li>
+          <li>Profit: 16%</li>
+        </ul>
+        <p class="plan-price"><span class="sp">$500</span> Maximum</p>
+        <div class="div-yellow4"></div>
+        <form action="index1.html">
+          <button class="button7">Get Started Now</button>
+        </form>
+      </div>
+  
+      <!-- Gold Plan -->
+      <div class="plan-container">
+        <p class="plan-title">GOLD PLAN</p>
+        <p class="plan-price"><span class="sp">$7,000</span> Minimum</p>
+        <div class="div-yellow"></div>
+        <ul class="plan-details">
+          <li>Instant Withdrawal</li>
+          <li>24/7 Support</li>
+          <li>Duration: 5 Days</li>
+          <li>Profit: 24.5%</li>
+        </ul>
+        <p class="plan-price"><span class="sp">$17,999</span> Maximum</p>
+        <div class="div-yellow4"></div>
+        <form action="index1.html">
+          <button class="button7">Get Started Now</button>
+        </form>
+      </div>
+  
+      <!-- Extended Plan -->
+      <div class="plan-container">
+        <p class="plan-title">EXTENDED PLAN</p>
+        <p class="plan-price"><span class="sp">$18,000</span> Minimum</p>
+        <div class="div-yellow"></div>
+        <ul class="plan-details">
+          <li>Instant Withdrawal</li>
+          <li>24/7 Support</li>
+          <li>Duration: 7 Days</li>
+          <li>Profit: 35.5%</li>
+        </ul>
+        <p class="plan-price"><span class="sp">Unlimited</span> Maximum</p>
+        <div class="div-yellow4"></div>
+        <form action="index1.html">
+          <button class="button7">Get Started Now</button>
+        </form>
+      </div>
+  
+      <!-- Compound Plan -->
+      <div class="plan-container">
+        <p class="plan-title">COMPOUND PLAN</p>
+        <p class="plan-price"><span class="sp">$1,000</span> Minimum</p>
+        <div class="div-yellow"></div>
+        <ul class="plan-details">
+          <li>Instant Withdrawal</li>
+          <li>24/7 Support</li>
+          <li>Duration: 1 Month</li>
+          <li>Profit: 8% Daily</li>
+        </ul>
+        <p class="plan-price"><span class="sp">$120,000</span> Maximum</p>
+        <div class="div-yellow4"></div>
+        <form action="index1.html">
+          <button class="button7">Get Started Now</button>
+        </form>
+      </div>
+  
+    </div>
+  </section>
+  <section class="section8">
+    <h2 class="section8-h2">Secured Payment Methods</h2>
+    <div class="line1"></div>
+    <p class="section8-p">Payment is 100% secured. Below are well integrated payment options in our platform.</p>
+    <div class="image-con">
+      <img src="{% static '21.jpg' %}" alt="Bitcoin" class="img999">
+      <img src="{% static '1.jpg' %}" alt="Ethereum" class="image88">
+      <img src="{% static '19.jpg' %}" alt="Shiba" class="image99">
+      <img src="{% static '16.jpg' %}" alt="Tether" class="img991">
+    </div>
+  </section>
+  <section class="sect-10">
+    <div class="sec-10-div">
+      <div class="sec10-con">
+        <img src="{% static "30.jpg" %}" alt="" class="sec-img">
+        <p class="sec-div-p">PRIME-LEDGER <br> <span class="spn22">INVESTMENT LIMITED</span></p>
+        <p class="reg-com">Registered Company</p>
+        <p class="reg-com1">We are legal company registered in UK. You can check our company <br> registration information HERE </p>
+        <div class="sec-10-div2">
+          <div class="walletm">
+            <div class="mon">
+            <img src="{% static "26b.png" %} " alt="" class="wallet">
+            </div>
+            <p class="p10k">10K +</p>
+            <p class="p10k1">Total Investors</p>
+          </div>
+          <div class="dollarm">
+            <div class="mon">
+            <img src="{% static "37b.png" %}" alt="" class="dollar-black">
+            </div>
+            <p class="p15m">$15M +</p>
+            <p class="p10k1">Total Paid</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="class">
+        <p class="prime">PRIME</p>
+        <div class="doc-img">
+          <img src="{% static "41.jpg" %}" alt="" class="document">
+        </div>
+        <p class="ledger">LEDGER</p>
+    </div> 
+  
+  </section>
+  <div class="section-12">
+   <div class="divdesign1">
+ 
+     <h2 class="sec12-h2">PrimeLedger-Finacial Support</h2> <br><br>
+     <p class="sec12-p">For our investors  we provide lifetime 5 Star Club Membership. Invest in <br> any of our plan, and get a free club membership.</p>
+     
+     <form action="index1.html">
+         <button class="button12"><a href="{% url 'register' %}">Get Started Now</a></button>
+     </form>
+   </div>
+ </div> 
+
+<div class="section13"> 
+  <div class="sec13-div">
+    <img src="{% static '30.jpg' %}" alt="" class="logo2">
+
+    <!-- Email -->
+    <div class="icon-text">
+      <img src="{% static '40.jpg' %}" alt="" class="class8">
+      <p class="class99">support@primeledger.com</p>
+    </div>
+
+    <!-- Phone -->
+    <div class="icon-text">
+      <img src="{% static '39.jpg' %}" alt="" class="class8">
+      <p class="class999">+447376547502</p>
+    </div>
+
+    <!-- Address -->
+    <div class="icon-text">
+      <img src="{% static '38.jpg' %}" alt="" class="class8">
+      <p class="class9999">13 Bergamot Rd, Allington, Maidstone ME16 9FX, United <span class="kin"> Kingdom</span></p>
+    </div>
+
+    <p class="about">About us</p>
+    <div class="line3"></div>
+    <p class="pxxx">Our award-winning partnership program allows us to provide <br> high-quality services to clients all around the world in their native <br> languages even in countries with no Prime Ledger- <br>Financial offices.</p>
+  </div>
+</div>
+
+
+
+      <script src="{% static "all.js" %}"></script>
+      <script src="{% static "res.js" %}"></script>
+</body>
+
+</html>

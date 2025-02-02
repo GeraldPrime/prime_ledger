@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <!-- Load static files in Django -->
+    {% load static %}
+    
+    <!-- Link to CSS file using the static tag -->
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <!-- Load logo image using the static tag -->
+                <img src="{% static '30.jpg' %}" alt="Logo" class="logo-image">
+            </div>
+            <h1>👋 Hello! 😁</h1>
+            <p>Sign in to continue with Prime-Ledger</p>
+            
+            <!-- The form for login -->
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="email">Email Or Username</label>
+                    <input type="text" id="email" placeholder="Enter your email address or username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" name="password">
+                </div>
+                <div class="options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember"> <label for="remember">Remember me</label>
+                    </div>
+                   
+                </div>
+            
+                <button type="submit" class="login-btn"><a href="{% url 'dashboard' %}">Account Login</a></button>
+            </form>
+            
+            <div class="signup-link">
+                <p>Don't have an account? <a href="{% url 'register' %}">Sign up for free</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
